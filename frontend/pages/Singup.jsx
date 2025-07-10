@@ -24,7 +24,7 @@ function Singup() {
         "http://localhost:5500/auth/singup",
         userData
       );
-      const { success, message, isAxiosError } = res.data;
+      const { success, message, } = res.data;
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
